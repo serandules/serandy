@@ -1,0 +1,12 @@
+{
+  "name": "serandives",
+  "version": "1.0.0",
+  "description": "utilities for serandives.com",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^1.5.0",
+    "commander": "^2.9.0",
+    "request": "^2.67.0",
+    "shelljs": "^0.5.3"
+  }
+}
