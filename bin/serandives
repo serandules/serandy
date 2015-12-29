@@ -16,11 +16,13 @@ program
   .command('setup [env]')
   .description('run setup commands for all envs')
   .option("-u, --user [mode]", "specify user")
+  .option("-g, --globals [mode]", "install global modules")
+  .option("-l, --locals [mode]", "install local modules")
+  .option("-u, --hosts [mode]", "setup host entries")
   .action(function (env, options) {
     var setup = require('../lib/setup');
     var mode = options.setup_mode || "normal";
     env = env || 'all';
-    console.log('setup for %s env(s) with %s mode', env, mode);
     setup(env, options);
   });
 
